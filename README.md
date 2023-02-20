@@ -79,9 +79,14 @@ https://openweathermap.org/current
 * Many Spring components have been created to implement required user stories (JPA Entities, Repositories, Services, Mappers, Controllers, REST DTO...)
 * Because of the short time limit, only a simple data model is used (Weather with city name, date and some other fields).
 * Some TODOs have been added into the code to improve the data model and the application's behavior
-* It would be interesting to implement other components like Security, AOP, Data Validation, WebFlux (for performance)...
+* It would be interesting to implement other components like Security, OpenAPI, AOP, Data Validation, WebFlux (for performance)...
 
 ## To run the application
+**Generate OpenWeatherMap API key and set the properties**
+```
+weather.technical.open_weather_map.api_key
+```
+
 **Go to the application folder:**
 ```
 $ cd weather

@@ -42,4 +42,6 @@ public interface IWeatherService {
      * @param id
      */
     void deleteById(int id) throws WeatherNotFoundException;
+
+    void feedCurrentWeatherData();
 }

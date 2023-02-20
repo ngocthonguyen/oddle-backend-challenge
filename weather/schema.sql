@@ -1,0 +1,21 @@
+CREATE TABLE `tbl_weather` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `city` varchar(255) NOT NULL,
+  `clouds_all` varchar(255) DEFAULT NULL,
+  `date` date NOT NULL,
+  `humidity` varchar(255) DEFAULT NULL,
+  `main_code` varchar(255) DEFAULT NULL,
+  `main_description` varchar(255) DEFAULT NULL,
+  `main_icon` varchar(255) DEFAULT NULL,
+  `pressure` varchar(255) DEFAULT NULL,
+  `temp` varchar(255) DEFAULT NULL,
+  `temp_max` varchar(255) DEFAULT NULL,
+  `temp_min` varchar(255) DEFAULT NULL,
+  `visibility` varchar(255) DEFAULT NULL,
+  `wind` varchar(255) DEFAULT NULL,
+  `wind_deg` varchar(255) DEFAULT NULL,
+  `wind_speed` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `city_date_UNIQUE` (`city`,`date`),
+  INDEX `city_date_INDEX` (`city`,`date`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;

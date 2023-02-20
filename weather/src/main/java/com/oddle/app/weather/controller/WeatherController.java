@@ -55,4 +55,9 @@ public class WeatherController {
     public void deleteWeatherById(@PathVariable int id) {
         weatherService.deleteById(id);
     }
+
+    @GetMapping("/runSchedule")
+    public void runSchedule(){
+        this.weatherService.feedCurrentWeatherData();
+    }
 }
