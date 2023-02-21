@@ -74,3 +74,44 @@ https://openweathermap.org/current
 * Code. Commit and Push as many times as you want, only the **LAST Pull Request** will be graded
 * Create a Pull Request from your new branch in your private repo and invite us as reviewer
 * Add https://github.com/oddle-hire-java as collaborator for your repo and add `oddle-hire-java` as reviewer to your PR
+
+## Implementation
+* Many Spring components have been created to implement required user stories (JPA Entities, Repositories, Services, Mappers, Controllers, REST DTO...)
+* Because of the short time limit, only a simple data model is used (Weather with city name, date and some other fields).
+* Some TODOs have been added into the code to improve the data model and the application's behavior
+* It would be interesting to implement other components like Security, OpenAPI, AOP, Data Validation, WebFlux (for performance)...
+
+## To run the application
+**Generate OpenWeatherMap API key and set the properties**
+```
+weather.technical.open_weather_map.api_key
+```
+
+**Go to the application folder:**
+```
+$ cd weather
+```
+**Run MySQL via docker:**
+```
+$ docker compose up
+```
+**Run the Spring Boot application:**
+```
+$ mvn spring-boot:run
+```
+
+## 3 ways to test the application
+**Unit tests**
+```
+$ mvn test
+```
+**Swagger interface**
+```
+http://localhost:8080/swagger-ui.html
+```
+**Postman**
+
+A PostMan project has been added to execute a functional test scenario
+```
+weather/Weather.postman_collection.json
+```
